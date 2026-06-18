@@ -1,161 +1,162 @@
 import type { Metadata } from "next";
 import CTA from "@/components/sections/CTA";
+import PricingPackages from "@/components/sections/PricingPackages";
 
 export const metadata: Metadata = {
   title: "Layanan",
   description:
-    "Layanan jasa pembuatan website dan aplikasi dari TechKuHouse: Website Company Profile, E-Commerce, Landing Page, Mobile App Development, UI/UX Design, dan SEO Optimization dengan harga terjangkau mulai dari Rp 5 juta.",
+    "Layanan TechKuHouse: website mulai Rp700rb (Silver/Gold/Diamond/Platinum), SEO bergaransi, Google Ads, Social Media Ads, pembuatan aplikasi. Domain & hosting gratis. Garansi selamanya.",
   openGraph: {
-    title: "Layanan | TechKuHouse",
+    title: "Layanan TechKuHouse | Website, SEO, Ads & Aplikasi",
     description:
-      "Layanan lengkap: Web Development, Mobile App, UI/UX Design, SEO Optimization dengan harga terjangkau.",
+      "4 paket website mulai Rp700.000 dengan domain+hosting gratis dan garansi selamanya. Plus SEO bergaransi, Google Ads, dan pembuatan aplikasi mobile.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/layanan`,
     type: "website",
+    images: [{ url: "/logo.png", width: 1200, height: 630, alt: "Layanan TechKuHouse" }],
   },
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/layanan` },
 };
 
 const services = [
   {
     id: "web-development",
     icon: "💻",
-    title: "Web Development",
+    title: "Pembuatan Website",
     description:
-      "Pembuatan website profesional dengan teknologi terkini yang responsive, cepat, dan SEO-friendly.",
+      "Website profesional dengan desain responsif, modern, dan SEO-friendly. Cocok untuk semua jenis bisnis mulai dari UKM hingga perusahaan besar.",
     features: [
       "Website Company Profile",
-      "E-Commerce / Toko Online",
+      "Toko Online / E-Commerce",
       "Landing Page / Sales Page",
-      "Web Application Custom",
       "Blog / Portal Berita",
-      "Sistem Informasi",
+      "Domain & Hosting Gratis",
+      "SSL Gratis (HTTPS)",
+      "Template WordPress Premium",
+      "Video Panduan Edit Konten",
     ],
-    pricing: "Mulai dari Rp 5.000.000",
-    technologies: ["Next.js", "React", "Laravel", "WordPress", "Node.js"],
+    pricing: "Mulai dari Rp 700.000",
+    technologies: ["WordPress", "Next.js", "React", "Laravel", "Node.js"],
+  },
+  {
+    id: "seo-bergaransi",
+    icon: "🚀",
+    title: "SEO Bergaransi",
+    description:
+      "Tingkatkan peringkat website di Google dengan strategi SEO yang telah terbukti. Kami bergaransi hasil nyata untuk meningkatkan traffic organik.",
+    features: [
+      "On-Page SEO Optimization",
+      "Technical SEO Audit",
+      "Riset Kata Kunci Mendalam",
+      "Optimasi Kecepatan Website",
+      "Google Analytics & Search Console",
+      "Laporan Bulanan Terperinci",
+      "Backlink Building Berkualitas",
+      "Garansi Peningkatan Ranking",
+    ],
+    pricing: "Mulai dari Rp 3.000.000/bulan",
+    technologies: ["Google Analytics", "Search Console", "SEMrush", "Ahrefs"],
+  },
+  {
+    id: "google-ads",
+    icon: "📢",
+    title: "Google Ads",
+    description:
+      "Kampanye iklan berbayar yang efektif untuk menjangkau calon pelanggan baru dalam waktu singkat dan meningkatkan penjualan secara signifikan.",
+    features: [
+      "Setup & Konfigurasi Kampanye",
+      "Riset & Optimasi Kata Kunci",
+      "Iklan Search & Display",
+      "Remarketing / Retargeting",
+      "A/B Testing Iklan",
+      "Optimasi Budget Harian",
+      "Laporan Performa Rutin",
+      "Konsultasi Strategi Iklan",
+    ],
+    pricing: "Mulai dari Rp 2.000.000/bulan",
+    technologies: ["Google Ads", "Google Analytics", "Google Tag Manager"],
   },
   {
     id: "mobile-app",
     icon: "📱",
-    title: "Mobile App Development",
+    title: "Pembuatan Aplikasi",
     description:
-      "Aplikasi mobile native dan cross-platform untuk iOS dan Android dengan performa optimal dan user experience yang maksimal.",
+      "Aplikasi mobile dan web custom untuk memenuhi kebutuhan bisnis spesifik Anda. Dikembangkan dengan teknologi terkini untuk performa optimal.",
     features: [
-      "iOS Native App (Swift)",
-      "Android Native App (Kotlin)",
-      "Cross-Platform (Flutter)",
-      "Cross-Platform (React Native)",
-      "App Maintenance & Update",
+      "Mobile App Android & iOS",
+      "Web Application Custom",
+      "E-Commerce Solutions",
+      "API Integration Services",
+      "UI/UX Design Profesional",
+      "Cloud-based Applications",
+      "Maintenance & Update",
       "App Store Deployment",
     ],
-    pricing: "Mulai dari Rp 15.000.000",
-    technologies: ["Flutter", "React Native", "Swift", "Kotlin"],
+    pricing: "Mulai dari Rp 5.000.000",
+    technologies: ["Flutter", "React Native", "Next.js", "Node.js", "Firebase"],
   },
   {
-    id: "uiux-design",
-    icon: "🎨",
-    title: "UI/UX Design",
+    id: "social-media-ads",
+    icon: "📲",
+    title: "Social Media Ads",
     description:
-      "Desain antarmuka yang menarik dan user experience yang intuitif untuk meningkatkan konversi dan kepuasan pengguna.",
+      "Bangun engagement dan jangkau audiens yang lebih luas melalui iklan di platform media sosial terpopuler di Indonesia.",
     features: [
-      "User Research & Analysis",
-      "Wireframing & Prototyping",
-      "Visual Design / Mockup",
-      "Design System Creation",
-      "Usability Testing",
-      "Responsive Design",
+      "Instagram & Facebook Ads",
+      "TikTok Ads",
+      "LinkedIn Ads",
+      "Desain Kreatif Iklan",
+      "Targeting Audiens Spesifik",
+      "Optimasi Konversi",
+      "Laporan Performa",
+      "Strategi Konten",
     ],
-    pricing: "Mulai dari Rp 7.500.000",
-    technologies: ["Figma", "Adobe XD", "Sketch", "InVision"],
-  },
-  {
-    id: "seo-optimization",
-    icon: "🚀",
-    title: "SEO Optimization",
-    description:
-      "Optimasi website agar mudah ditemukan di mesin pencari Google dan meningkatkan traffic organik secara signifikan.",
-    features: [
-      "On-Page SEO Optimization",
-      "Technical SEO Audit",
-      "Content Strategy & Creation",
-      "Backlink Building",
-      "Google Analytics Setup",
-      "Monthly SEO Report",
-    ],
-    pricing: "Mulai dari Rp 3.000.000/bulan",
-    technologies: [
-      "Google Analytics",
-      "Google Search Console",
-      "SEMrush",
-      "Ahrefs",
-    ],
+    pricing: "Mulai dari Rp 1.500.000/bulan",
+    technologies: ["Meta Ads Manager", "TikTok Ads", "Canva Pro", "Adobe"],
   },
   {
     id: "web-maintenance",
     icon: "🛠️",
-    title: "Website Maintenance",
+    title: "Maintenance Website",
     description:
-      "Layanan pemeliharaan website berkala untuk menjaga performa, keamanan, dan update konten website Anda.",
+      "Layanan pemeliharaan website berkala untuk menjaga performa, keamanan, dan update konten agar bisnis Anda tetap online dengan optimal.",
     features: [
-      "Regular Backup & Security",
-      "Content Update",
+      "Backup Rutin & Keamanan",
+      "Update Plugin & Tema",
+      "Pembaruan Konten",
       "Bug Fixing & Troubleshooting",
-      "Performance Monitoring",
+      "Monitoring Uptime 24/7",
       "SSL Certificate Management",
-      "Monthly Report",
+      "Optimasi Kecepatan",
+      "Laporan Bulanan",
     ],
-    pricing: "Mulai dari Rp 1.500.000/bulan",
-    technologies: ["cPanel", "CloudFlare", "AWS", "Google Cloud"],
-  },
-  {
-    id: "consultation",
-    icon: "💡",
-    title: "Digital Consultation",
-    description:
-      "Konsultasi strategi digital untuk membantu bisnis Anda berkembang dengan solusi teknologi yang tepat.",
-    features: [
-      "Digital Strategy Planning",
-      "Technology Stack Selection",
-      "Budget & Timeline Planning",
-      "Business Process Analysis",
-      "Competitor Analysis",
-      "Growth Roadmap",
-    ],
-    pricing: "Mulai dari Rp 2.000.000",
-    technologies: ["Business Analysis", "Market Research", "Planning Tools"],
+    pricing: "Mulai dari Rp 500.000/bulan",
+    technologies: ["cPanel", "CloudFlare", "WordPress", "Google Cloud"],
   },
 ];
 
 const workflowSteps = [
   {
     step: "01",
-    title: "Konsultasi",
-    description: "Diskusi kebutuhan dan tujuan project Anda dengan tim kami",
+    title: "Discover",
+    description: "Kami menggali kebutuhan, tantangan, dan tujuan bisnis Anda secara mendalam untuk memahami solusi digital yang paling tepat.",
   },
   {
     step: "02",
-    title: "Perencanaan",
-    description: "Membuat proposal, timeline, dan estimasi biaya yang detail",
+    title: "Define",
+    description: "Bersama Anda, kami menetapkan objektif yang jelas, terukur, dan selaras dengan visi bisnis Anda untuk hasil yang optimal.",
   },
   {
     step: "03",
-    title: "Desain",
-    description: "Membuat mockup dan prototype untuk approval klien",
+    title: "Design & Build",
+    description: "Tim kami merancang strategi dan membangun solusi digital Anda — dari desain UI hingga pengembangan — dengan standar kualitas tertinggi.",
   },
   {
     step: "04",
-    title: "Development",
-    description: "Proses coding dan development dengan update berkala",
-  },
-  {
-    step: "05",
-    title: "Testing",
-    description: "Quality assurance dan testing menyeluruh sebelum launch",
-  },
-  {
-    step: "06",
-    title: "Launch & Support",
-    description: "Deploy project dan memberikan support berkelanjutan",
+    title: "Deliver & Grow",
+    description: "Website diluncurkan, dimonitor, dan kami pastikan terus memberikan hasil nyata bagi pertumbuhan bisnis Anda.",
   },
 ];
+
 
 export default function LayananPage() {
   return (
@@ -237,7 +238,7 @@ export default function LayananPage() {
                       </div>
                     </div>
                     <a
-                      href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890"}?text=Halo%20TechKuHouse%2C%20saya%20tertarik%20dengan%20layanan%20${encodeURIComponent(service.title)}`}
+                      href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046"}?text=Halo%20TechKuHouse%2C%20saya%20tertarik%20dengan%20layanan%20${encodeURIComponent(service.title)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-200"
@@ -252,14 +253,16 @@ export default function LayananPage() {
         </div>
       </section>
 
+      <PricingPackages />
+
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
-              Proses Kerja Kami
+              Metodologi 4D Kami
             </h2>
             <p className="text-lg text-dark-light max-w-2xl mx-auto">
-              Metodologi yang terstruktur untuk hasil maksimal
+              Pendekatan terstruktur yang telah terbukti menghasilkan website dan solusi digital berkualitas tinggi
             </p>
           </div>
 
@@ -300,7 +303,7 @@ export default function LayananPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890"}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20diskusi%20tentang%20paket%20custom`}
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046"}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20diskusi%20tentang%20paket%20custom`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark shadow-md hover:shadow-lg transition-all duration-200"
@@ -308,13 +311,177 @@ export default function LayananPage() {
                   Diskusi Paket Custom
                 </a>
                 <a
-                  href="mailto:info@techkuhouse.com"
+                  href="mailto:admin@techkuhouse.id"
                   className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-200"
                 >
                   Kirim Email
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-primary-dark to-dark text-white">
+        <div className="container-custom">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="text-6xl mb-4">🕌</div>
+              <div className="inline-block bg-white/10 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                Program Sosial TechKuHouse
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Website GRATIS untuk Lembaga Agama
+              </h2>
+              <p className="text-lg text-gray-200 leading-relaxed max-w-3xl mx-auto">
+                TechKuHouse berkomitmen mendukung kegiatan keagamaan di Indonesia. Kami memberikan website GRATIS untuk masjid, mushola, pesantren, gereja, pura, vihara, dan lembaga agama lainnya agar dapat memiliki kehadiran digital yang baik.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-6">Syarat & Ketentuan</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="text-primary-light mr-3 mt-1 flex-shrink-0">✓</span>
+                    <span>Merupakan lembaga agama resmi (masjid, mushola, pesantren, gereja, pura, vihara, dll)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-light mr-3 mt-1 flex-shrink-0">✓</span>
+                    <span>Memiliki surat keterangan atau bukti lembaga agama terdaftar</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-light mr-3 mt-1 flex-shrink-0">✓</span>
+                    <span>Website hanya untuk keperluan keagamaan & sosial (bukan komersial)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-light mr-3 mt-1 flex-shrink-0">✓</span>
+                    <span>Bersedia dipublikasikan sebagai mitra sosial TechKuHouse</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-6">Fasilitas yang Diberikan</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/10 rounded-lg p-4">
+                    <div className="text-2xl mb-2">📄</div>
+                    <div className="font-semibold">Website 5 Halaman</div>
+                  </div>
+                  <div className="bg-white/10 rounded-lg p-4">
+                    <div className="text-2xl mb-2">🌐</div>
+                    <div className="font-semibold">Domain Gratis</div>
+                    <div className="text-xs text-gray-300">.id atau .web.id</div>
+                  </div>
+                  <div className="bg-white/10 rounded-lg p-4">
+                    <div className="text-2xl mb-2">☁️</div>
+                    <div className="font-semibold">Hosting 1 Tahun</div>
+                  </div>
+                  <div className="bg-white/10 rounded-lg p-4">
+                    <div className="text-2xl mb-2">🔒</div>
+                    <div className="font-semibold">SSL Gratis</div>
+                  </div>
+                  <div className="bg-white/10 rounded-lg p-4">
+                    <div className="text-2xl mb-2">🎨</div>
+                    <div className="font-semibold">Template Profesional</div>
+                  </div>
+                  <div className="bg-white/10 rounded-lg p-4">
+                    <div className="text-2xl mb-2">📚</div>
+                    <div className="font-semibold">Panduan Pengelolaan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046"}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20mendaftar%20program%20website%20gratis%20untuk%20lembaga%20agama`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all duration-200"
+              >
+                <span className="mr-2">📝</span>
+                Daftar Program Gratis
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="text-6xl mb-4">🛒</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                Pesan Aman via Shopee
+              </h2>
+              <div className="text-xl text-primary font-semibold mb-4">
+                Sistem Pre-Order (PO) — Dana Anda 100% Aman
+              </div>
+              <p className="text-lg text-dark-light leading-relaxed max-w-3xl mx-auto">
+                Untuk kenyamanan dan keamanan transaksi Anda, TechKuHouse kini hadir di Shopee. Dengan sistem PO Shopee, dana Anda terlindungi — pembayaran baru akan kami terima setelah website selesai dan Anda puas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
+                <div className="text-4xl mb-4">🔒</div>
+                <h3 className="text-xl font-bold text-dark mb-3">Dana Aman Terlindungi</h3>
+                <p className="text-dark-light leading-relaxed">
+                  Dana ditahan oleh Shopee, bukan langsung ke kami. Baru cair ketika website sudah selesai dan Anda konfirmasi.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
+                <div className="text-4xl mb-4">✅</div>
+                <h3 className="text-xl font-bold text-dark mb-3">Garansi Uang Kembali</h3>
+                <p className="text-dark-light leading-relaxed">
+                  Jika pekerjaan tidak sesuai, Anda bisa mengajukan komplain melalui sistem perlindungan Shopee.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
+                <div className="text-4xl mb-4">📱</div>
+                <h3 className="text-xl font-bold text-dark mb-3">Mudah & Praktis</h3>
+                <p className="text-dark-light leading-relaxed">
+                  Pesan langsung dari aplikasi Shopee yang sudah Anda gunakan sehari-hari.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
+                <div className="text-4xl mb-4">⭐</div>
+                <h3 className="text-xl font-bold text-dark mb-3">Rating & Ulasan</h3>
+                <p className="text-dark-light leading-relaxed">
+                  Lihat ulasan dari ratusan pelanggan kami sebelum memesan untuk keyakinan lebih.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="https://shopee.co.id/techkuhouse"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 shadow-xl hover:shadow-2xl transition-all duration-200"
+              >
+                <span className="mr-2">🛍️</span>
+                Buka Toko Shopee Kami
+              </a>
+              <a
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046"}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20website`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-200"
+              >
+                <span className="mr-2">💬</span>
+                Konsultasi via WhatsApp
+              </a>
+            </div>
+
+            <p className="text-center text-sm text-dark-light mt-8 max-w-2xl mx-auto">
+              <strong>Note:</strong> Tersedia juga pembayaran DP langsung via Transfer Bank / QRIS untuk pemesanan di luar Shopee.
+            </p>
           </div>
         </div>
       </section>
