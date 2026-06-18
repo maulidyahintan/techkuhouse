@@ -110,7 +110,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen -mt-16 sm:-mt-20">
       <div className="absolute inset-0 z-0 pointer-events-auto">
         <HeroSplineBackground />
       </div>

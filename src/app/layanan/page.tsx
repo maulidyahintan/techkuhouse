@@ -160,7 +160,7 @@ const workflowSteps = [
 export default function LayananPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-primary/10">
+      <section className="pt-20 sm:pt-24 pb-20 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6">
