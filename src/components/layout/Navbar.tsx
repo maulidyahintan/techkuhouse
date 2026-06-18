@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import Button from "@/components/ui/Button";
@@ -40,11 +41,15 @@ export default function Navbar() {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">TK</span>
-            </div>
-            <span className="text-xl font-bold text-dark">TechKuHouse</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="TechKuHouse Logo"
+              width={250}
+              height={100}
+              className="h-24 w-auto object-contain"
+              priority
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

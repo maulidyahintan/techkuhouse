@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
   perusahaan: [
@@ -31,12 +32,13 @@ export default function Footer() {
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">TK</span>
-              </div>
-              <span className="text-xl font-bold">TechKuHouse</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="TechKuHouse"
+              width={200}
+              height={67}
+              className="h-14 w-auto object-contain brightness-0 invert mb-4"
+            />
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
               Solusi digital terbaik untuk mengembangkan bisnis Anda. Kami
               menciptakan website dan aplikasi yang modern, cepat, dan efektif.

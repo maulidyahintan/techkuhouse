@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "Jasa pembuatan website profesional di Jakarta. Web Development, Mobile App, UI/UX Design, dan SEO Optimization.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "TechKuHouse - Jasa Pembuatan Website",
@@ -69,14 +69,19 @@ export const metadata: Metadata = {
     title: "TechKuHouse - Solusi Digital Terbaik untuk Bisnis Anda",
     description:
       "Jasa pembuatan website profesional di Jakarta. Web Development, Mobile App, UI/UX Design, dan SEO Optimization.",
-    images: ["/og-image.jpg"],
+    images: ["/logo.png"],
   },
   viewport: {
     width: "device-width",
     initialScale: 1,
     maximumScale: 5,
   },
-  themeColor: "#2563EB",
+  icons: {
+    icon: [{ url: "/icon-logo.png", type: "image/png" }],
+    apple: "/icon-logo.png",
+    shortcut: "/icon-logo.png",
+  },
+  themeColor: "#2952B3",
   manifest: "/manifest.webmanifest",
 };
 
