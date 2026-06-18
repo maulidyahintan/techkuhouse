@@ -1,0 +1,77 @@
+import Button from "@/components/ui/Button";
+
+export default function CTA() {
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20berkonsultasi%20tentang%20project%20saya`;
+
+  return (
+    <section className="py-20 md:py-32 bg-gradient-to-br from-primary via-primary-dark to-dark relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-light rounded-full filter blur-3xl opacity-20" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full filter blur-3xl opacity-20" />
+
+      <div className="container-custom relative z-10">
+        <div className="max-w-3xl mx-auto text-center text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Siap Mengembangkan Bisnis Anda?
+          </h2>
+          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+            Konsultasikan kebutuhan digital Anda dengan tim expert kami.
+            Dapatkan solusi terbaik untuk mengakselerasi pertumbuhan bisnis Anda.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-white text-primary hover:bg-gray-100 shadow-xl hover:shadow-2xl"
+              >
+                <span className="flex items-center">
+                  <span className="mr-2">💬</span>
+                  Chat via WhatsApp
+                </span>
+              </Button>
+            </a>
+            <a href="mailto:info@techkuhouse.com">
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary"
+              >
+                <span className="flex items-center">
+                  <span className="mr-2">✉️</span>
+                  Email Kami
+                </span>
+              </Button>
+            </a>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-white/20">
+            <div>
+              <div className="text-3xl mb-2">⚡</div>
+              <h3 className="font-semibold mb-1">Fast Response</h3>
+              <p className="text-sm text-gray-300">
+                Respon cepat maksimal 2 jam
+              </p>
+            </div>
+            <div>
+              <div className="text-3xl mb-2">💰</div>
+              <h3 className="font-semibold mb-1">Harga Kompetitif</h3>
+              <p className="text-sm text-gray-300">
+                Kualitas terbaik dengan harga terjangkau
+              </p>
+            </div>
+            <div>
+              <div className="text-3xl mb-2">🎯</div>
+              <h3 className="font-semibold mb-1">Garansi Kepuasan</h3>
+              <p className="text-sm text-gray-300">
+                Free revisi hingga Anda puas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
