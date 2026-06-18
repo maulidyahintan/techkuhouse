@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -10,27 +10,36 @@ const inter = Inter({
   display: "swap",
 });
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "TechKuHouse - Solusi Digital Terbaik untuk Bisnis Anda",
+    default: "TechKuHouse | Jasa Pembuatan Website Profesional & SEO Bergaransi",
     template: "%s | TechKuHouse",
   },
   description:
-    "TechKuHouse adalah jasa pembuatan website profesional di Jakarta, Indonesia. Kami menyediakan layanan Web Development, Mobile App, UI/UX Design, dan SEO Optimization untuk mengembangkan bisnis Anda secara digital.",
+    "Jasa pembuatan website profesional mulai Rp700.000. Domain & hosting gratis, SSL, template premium, garansi selamanya. Pesan aman via Shopee PO. Tersedia website gratis lembaga agama.",
   keywords: [
     "jasa pembuatan website",
-    "web development",
-    "pembuatan website jakarta",
     "jasa website murah",
-    "toko online",
-    "company profile",
-    "landing page",
-    "mobile app development",
-    "UI/UX design",
-    "SEO optimization",
+    "buat website profesional",
+    "pembuatan website jakarta",
+    "website company profile",
+    "toko online murah",
+    "jasa SEO bergaransi",
+    "web developer indonesia",
+    "website wordpress murah",
+    "jasa digital marketing",
+    "website gratis masjid",
+    "pesan website shopee",
     "TechKuHouse",
   ],
   authors: [{ name: "TechKuHouse" }],
@@ -52,9 +61,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: siteUrl,
     siteName: "TechKuHouse",
-    title: "TechKuHouse - Solusi Digital Terbaik untuk Bisnis Anda",
+    title: "TechKuHouse | Jasa Pembuatan Website Profesional & SEO Bergaransi",
     description:
-      "Jasa pembuatan website profesional di Jakarta. Web Development, Mobile App, UI/UX Design, dan SEO Optimization.",
+      "Jasa pembuatan website profesional mulai Rp700.000 dengan domain & hosting gratis, SSL, garansi selamanya. Tersedia paket Silver, Gold, Diamond, Platinum.",
     images: [
       {
         url: "/logo.png",
@@ -91,7 +100,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={inter.variable}>
+    <html lang="id" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="flex min-h-screen flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
