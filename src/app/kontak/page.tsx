@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import KontakForm from "./KontakForm";
 
 export const metadata: Metadata = {
@@ -19,13 +20,24 @@ export const metadata: Metadata = {
 export default function KontakPage() {
   return (
     <>
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6">
+      <section className="relative pt-32 pb-24 overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=900&fit=crop&auto=format"
+          alt="Hubungi TechKuHouse"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/80 to-dark/70" />
+        {/* Content */}
+        <div className="relative z-10 container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Hubungi Kami
             </h1>
-            <p className="text-lg md:text-xl text-dark-light leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               Ada pertanyaan atau ingin konsultasi tentang website Anda? Kami siap membantu setiap hari. Respon cepat maksimal 2 jam di jam kerja.
             </p>
           </div>

@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   { name: "Beranda", url: "/", icon: Home },
   { name: "Tentang", url: "/tentang", icon: Users },
   { name: "Layanan", url: "/layanan", icon: Briefcase },
-  { name: "Portfolio", url: "/portfolio", icon: FolderOpen },
+  // { name: "Portfolio", url: "/portfolio", icon: FolderOpen },
   { name: "Kontak", url: "/kontak", icon: Phone },
 ];
 

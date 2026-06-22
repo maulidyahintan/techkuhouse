@@ -27,13 +27,13 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-20 md:py-32 bg-[#111827]">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Portfolio Kami
           </h2>
-          <p className="text-lg md:text-xl text-dark-light max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
             Beberapa project yang telah kami selesaikan dengan hasil memuaskan
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function Portfolio() {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-100"
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-800"
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
@@ -52,17 +52,17 @@ export default function Portfolio() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               <div className="p-6">
-                <div className="text-primary text-sm font-semibold mb-2">
+                <div className="bg-white/20 text-white px-2 py-0.5 rounded-full text-xs font-semibold mb-2 inline-block">
                   {item.category}
                 </div>
-                <h3 className="text-xl font-bold text-dark mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {item.title}
                 </h3>
-                <p className="text-dark-light text-sm">{item.description}</p>
+                <p className="text-gray-300 text-sm">{item.description}</p>
               </div>
 
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -78,7 +78,7 @@ export default function Portfolio() {
 
         <div className="text-center mt-12">
           <Link href="/portfolio">
-            <button className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-lg transition-all duration-200 border-2 border-primary text-primary hover:bg-primary hover:text-white">
+            <button className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-lg transition-all duration-200 border-2 border-white/50 text-white hover:bg-white hover:text-gray-900">
               Lihat Semua Portfolio
             </button>
           </Link>

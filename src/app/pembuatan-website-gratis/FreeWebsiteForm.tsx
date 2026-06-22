@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Gift, Building, Image, User, Send, Info } from "lucide-react";
+import { Gift, Building, ImageIcon, User, Send, Info } from "lucide-react";
+import NextImage from "next/image";
 
 export default function FreeWebsiteForm() {
   const [formData, setFormData] = useState({
@@ -77,8 +78,16 @@ export default function FreeWebsiteForm() {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-800 py-16 md:py-20 pt-24 md:pt-28">
-        <div className="container-custom">
+      <div className="relative min-h-[400px] sm:min-h-[480px] flex items-center py-16 md:py-20 pt-24 md:pt-28 overflow-hidden">
+        <NextImage
+          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&h=900&fit=crop&auto=format"
+          alt="Program Website Gratis TechKuHouse"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/85 via-emerald-800/80 to-teal-900/85" />
+        <div className="relative z-10 container-custom w-full">
           <div className="max-w-3xl mx-auto text-center">
             <div className="bg-white/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Gift className="w-10 h-10 text-white" />
@@ -203,7 +212,7 @@ export default function FreeWebsiteForm() {
             {/* Kelompok 2 - Aset & Referensi */}
             <div className="mb-10">
               <h3 className="text-lg font-bold text-gray-900 mb-6 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <Image className="w-5 h-5 text-emerald-600" />
+                <ImageIcon className="w-5 h-5 text-emerald-600" />
                 Aset & Referensi
               </h3>
 

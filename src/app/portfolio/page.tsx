@@ -5,14 +5,16 @@ import CTA from "@/components/sections/CTA";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Portfolio project TechKuHouse: Website Company Profile, E-Commerce, Mobile App, dan Landing Page yang telah kami kerjakan untuk berbagai klien dengan hasil memuaskan.",
+    "Portfolio TechKuHouse: 100+ project website company profile, toko online, landing page, dan aplikasi mobile yang telah selesai untuk klien di seluruh Indonesia.",
   openGraph: {
-    title: "Portfolio | TechKuHouse",
+    title: "Portfolio TechKuHouse | 100+ Project Website & Aplikasi",
     description:
-      "Lihat portfolio project website dan aplikasi yang telah kami kerjakan dengan hasil memuaskan.",
+      "Lihat hasil karya TechKuHouse — website dan aplikasi untuk berbagai industri di Indonesia. E-commerce, company profile, mobile app, dan lebih banyak lagi.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/portfolio`,
     type: "website",
+    images: [{ url: "/logo.png", width: 1200, height: 630, alt: "Portfolio TechKuHouse" }],
   },
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/portfolio` },
 };
 
 const categories = [
@@ -27,135 +29,52 @@ const categories = [
 const portfolioItems = [
   {
     id: 1,
-    title: "Fashion Store Online",
-    category: "E-Commerce",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    title: "Kang Cetak",
+    category: "Company Profile",
+    image: "/kangcetak.png",
     description:
-      "Platform e-commerce modern untuk brand fashion lokal dengan fitur live chat, payment gateway terintegrasi, dan sistem inventory management.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-    client: "PT. Fashion Indo",
-    year: "2024",
-    url: "#",
+      "Website company profile untuk jasa percetakan profesional. Menampilkan layanan cetak, portofolio hasil cetak, kalkulator harga, dan sistem pemesanan online yang memudahkan pelanggan.",
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    client: "Kang Cetak",
+    year: "2025",
+    url: "https://kang-cetak.vercel.app",
   },
   {
     id: 2,
-    title: "Corporate Website",
-    category: "Company Profile",
-    image:
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-    description:
-      "Website corporate profesional dengan CMS untuk memudahkan update konten, multi-language support, dan optimasi SEO yang maksimal.",
-    technologies: ["Next.js", "WordPress", "MySQL"],
-    client: "PT. Sentosa Group",
-    year: "2024",
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "Food Delivery App",
-    category: "Mobile App",
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
-    description:
-      "Aplikasi delivery makanan dengan real-time tracking, multiple payment options, dan sistem rating & review untuk driver dan restaurant.",
-    technologies: ["Flutter", "Firebase", "Google Maps API"],
-    client: "GoMakan",
-    year: "2023",
-    url: "#",
-  },
-  {
-    id: 4,
-    title: "Property Listing Website",
-    category: "Website",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-    description:
-      "Portal listing properti dengan advanced search filters, virtual tour 360°, dan sistem appointment booking terintegrasi.",
-    technologies: ["React", "Laravel", "MySQL", "AWS S3"],
-    client: "PropertiKu",
-    year: "2023",
-    url: "#",
-  },
-  {
-    id: 5,
-    title: "SaaS Landing Page",
+    title: "Coffee Shop",
     category: "Landing Page",
-    image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+    image: "/coffeshop.png",
     description:
-      "Landing page yang engaging untuk SaaS product dengan animated sections, conversion-optimized layout, dan A/B testing ready.",
+      "Landing page modern untuk kedai kopi lokal dengan desain yang cozy dan elegan. Menampilkan menu, lokasi, jam operasional, dan galeri suasana kedai untuk menarik pelanggan baru.",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    client: "CloudSync",
-    year: "2024",
-    url: "#",
-  },
-  {
-    id: 6,
-    title: "Health & Fitness App",
-    category: "Mobile App",
-    image:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
-    description:
-      "Aplikasi tracking fitness dengan workout plans, nutrition tracking, progress analytics, dan social features untuk motivasi.",
-    technologies: ["React Native", "Node.js", "MongoDB"],
-    client: "FitLife",
-    year: "2023",
-    url: "#",
-  },
-  {
-    id: 7,
-    title: "Restaurant Booking System",
-    category: "Website",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop",
-    description:
-      "Sistem reservasi restaurant online dengan table management, menu digital, dan sistem queue management yang efisien.",
-    technologies: ["Next.js", "Express", "PostgreSQL"],
-    client: "Resto Premium",
-    year: "2024",
-    url: "#",
-  },
-  {
-    id: 8,
-    title: "Online Course Platform",
-    category: "Website",
-    image:
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop",
-    description:
-      "Platform pembelajaran online dengan video streaming, quiz system, progress tracking, dan certificate generation otomatis.",
-    technologies: ["Next.js", "Laravel", "MySQL", "Vimeo API"],
-    client: "EduTech Indonesia",
-    year: "2023",
-    url: "#",
-  },
-  {
-    id: 9,
-    title: "Crypto Wallet App",
-    category: "Mobile App",
-    image:
-      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=600&fit=crop",
-    description:
-      "Digital wallet untuk cryptocurrency dengan multi-chain support, biometric security, dan real-time market data integration.",
-    technologies: ["Flutter", "Blockchain API", "Firebase"],
-    client: "CryptoVault",
-    year: "2024",
-    url: "#",
-  },
+    client: "Coffee Shop",
+    year: "2025",
+    url: "https://coffee-shop-porto.vercel.app",
+  }
 ];
 
 export default function PortfolioPage() {
   return (
     <>
-      <section className="pt-20 sm:pt-24 pb-20 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6">
+      <section className="relative pt-20 sm:pt-24 pb-24 overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&h=900&fit=crop&auto=format"
+          alt="Portfolio TechKuHouse"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/80 to-dark/70" />
+        {/* Content */}
+        <div className="relative z-10 container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Portfolio Kami
             </h1>
-            <p className="text-lg md:text-xl text-dark-light leading-relaxed">
-              Beberapa project yang telah kami selesaikan dengan hasil yang
-              memuaskan dan memberikan dampak positif bagi bisnis klien kami
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+              Beberapa project yang telah kami selesaikan dengan hasil yang memuaskan dan memberikan dampak positif bagi bisnis klien kami
             </p>
           </div>
         </div>
@@ -163,7 +82,7 @@ export default function PortfolioPage() {
 
       <section className="py-20">
         <div className="container-custom">
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {/* <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((category, index) => (
               <button
                 key={index}
@@ -176,7 +95,7 @@ export default function PortfolioPage() {
                 {category}
               </button>
             ))}
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolioItems.map((item) => (
@@ -237,9 +156,20 @@ export default function PortfolioPage() {
                           {item.client}
                         </div>
                       </div>
-                      <button className="text-primary font-semibold text-sm hover:underline">
-                        Lihat Detail →
-                      </button>
+                      {item.url !== "#" ? (
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary font-semibold text-sm hover:underline"
+                        >
+                          Lihat Projek →
+                        </a>
+                      ) : (
+                        <span className="text-dark-light/50 font-semibold text-sm cursor-not-allowed">
+                          Lihat Projek →
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -261,7 +191,7 @@ export default function PortfolioPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890"}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20konsultasi%20project`}
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046"}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20konsultasi%20project`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark shadow-md hover:shadow-lg transition-all duration-200"

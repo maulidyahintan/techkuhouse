@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import CTA from "@/components/sections/CTA";
 import PricingPackages from "@/components/sections/PricingPackages";
 import ServicesAccordion from "@/components/sections/ServicesAccordion";
@@ -159,15 +160,25 @@ const workflowSteps = [
 export default function LayananPage() {
   return (
     <>
-      <section className="pt-20 sm:pt-24 pb-20 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6">
+      <section className="relative min-h-[450px] sm:min-h-[520px] flex items-center pt-20 sm:pt-24 pb-16 overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=900&fit=crop&auto=format"
+          alt="Layanan Digital TechKuHouse"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/80 to-dark/70" />
+        {/* Content */}
+        <div className="relative z-10 container-custom w-full">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Layanan Kami
             </h1>
-            <p className="text-lg md:text-xl text-dark-light leading-relaxed">
-              Tidak hanya jasa pembuatan website dan app, kamu juga menyediakan jasa jasa digital lainnya. <br />Solusi digital lengkap untuk berbagai kebutuhan bisnis Anda dengan
-              teknologi terkini dan harga yang kompetitif
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+              Tidak hanya jasa pembuatan website dan app, kami juga menyediakan jasa digital lainnya. Solusi digital lengkap untuk berbagai kebutuhan bisnis Anda dengan teknologi terkini dan harga yang kompetitif
             </p>
           </div>
         </div>

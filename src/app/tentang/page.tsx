@@ -74,13 +74,24 @@ const values = [
 export default function TentangPage() {
   return (
     <>
-      <section className="pt-20 sm:pt-24 pb-20 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6">
+      <section className="relative min-h-[450px] sm:min-h-[520px] flex items-center pt-20 sm:pt-24 pb-16 overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&auto=format"
+          alt="Tim TechKuHouse"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/80 to-dark/70" />
+        {/* Content */}
+        <div className="relative z-10 container-custom w-full">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Tentang TechKuHouse
             </h1>
-            <p className="text-lg md:text-xl text-dark-light leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               TechKuHouse hadir untuk menciptakan desain yang memukau, fitur yang canggih, dan strategi digital yang tepat sasaran. Kami menjadikan website dan aplikasi Anda sebagai mesin pertumbuhan bisnis yang nyata.
             </p>
           </div>
