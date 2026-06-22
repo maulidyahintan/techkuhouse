@@ -17,32 +17,6 @@ export const metadata: Metadata = {
   alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/tentang` },
 };
 
-const teamMembers = [
-  {
-    name: "Reza Firmansyah",
-    position: "CEO & Founder",
-    avatar: "RF",
-    bio: "Berpengalaman 8+ tahun di industri digital dan startup Indonesia",
-  },
-  {
-    name: "Andika Pratama",
-    position: "Lead Developer",
-    avatar: "AP",
-    bio: "Full-stack developer spesialis Next.js, Laravel, dan WordPress",
-  },
-  {
-    name: "Nadia Putri",
-    position: "UI/UX Designer",
-    avatar: "NP",
-    bio: "Desainer kreatif dengan 200+ project website yang berhasil",
-  },
-  {
-    name: "Fajar Nugroho",
-    position: "Digital Marketing",
-    avatar: "FN",
-    bio: "Ahli SEO dan Google Ads yang telah menangani 100+ campaign",
-  },
-];
 
 const values = [
   {

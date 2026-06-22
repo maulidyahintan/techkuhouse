@@ -1,4 +1,3 @@
-import { Gift, Check, ArrowRight, Building2, Heart, Users, BookOpen, Globe, Star } from "lucide-react";
 
 export default function PromoFree() {
   return (
