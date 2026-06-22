@@ -4,14 +4,16 @@ import KontakForm from "./KontakForm";
 export const metadata: Metadata = {
   title: "Kontak",
   description:
-    "Hubungi TechKuHouse untuk konsultasi gratis tentang pembuatan website dan aplikasi. Alamat: Jakarta Selatan. Email: info@techkuhouse.com. WhatsApp: +62 812 3456 7890.",
+    "Hubungi TechKuHouse untuk konsultasi gratis pembuatan website. Respon cepat 2 jam. WhatsApp, email, atau pesan aman via Shopee. Program website gratis untuk lembaga agama tersedia.",
   openGraph: {
-    title: "Kontak | TechKuHouse",
+    title: "Kontak TechKuHouse | Konsultasi Gratis Pembuatan Website",
     description:
-      "Hubungi kami untuk konsultasi gratis. Tim expert siap membantu mewujudkan project digital Anda.",
+      "Konsultasi gratis tanpa syarat. Respon dalam 2 jam jam kerja. Hubungi via WhatsApp, email, atau kunjungi toko Shopee kami.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/kontak`,
     type: "website",
+    images: [{ url: "/logo.png", width: 1200, height: 630, alt: "Kontak TechKuHouse" }],
   },
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/kontak` },
 };
 
 export default function KontakPage() {
@@ -24,8 +26,7 @@ export default function KontakPage() {
               Hubungi Kami
             </h1>
             <p className="text-lg md:text-xl text-dark-light leading-relaxed">
-              Ada pertanyaan atau ingin berkonsultasi tentang project Anda?
-              Jangan ragu untuk menghubungi kami. Tim kami siap membantu!
+              Ada pertanyaan atau ingin konsultasi tentang website Anda? Kami siap membantu setiap hari. Respon cepat maksimal 2 jam di jam kerja.
             </p>
           </div>
         </div>
@@ -38,7 +39,7 @@ export default function KontakPage() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-dark mb-4">Lokasi Kami</h2>
             <p className="text-dark-light">
-              Jakarta Selatan, DKI Jakarta, Indonesia
+              Jakarta Timur, DKI Jakarta, Indonesia
             </p>
           </div>
 
