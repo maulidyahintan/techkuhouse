@@ -17,14 +17,6 @@ export const metadata: Metadata = {
   alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com"}/portfolio` },
 };
 
-const categories = [
-  "Semua",
-  "Website",
-  "Mobile App",
-  "E-Commerce",
-  "Company Profile",
-  "Landing Page",
-];
 
 const portfolioItems = [
   {

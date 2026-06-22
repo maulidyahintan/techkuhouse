@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -18,6 +18,13 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://techkuhouse.com";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#2952B3",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -80,17 +87,13 @@ export const metadata: Metadata = {
       "Jasa pembuatan website profesional di Jakarta. Web Development, Mobile App, UI/UX Design, dan SEO Optimization.",
     images: ["/logo.png"],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   icons: {
-    icon: [{ url: "/icon-logo.png", type: "image/png" }],
-    apple: "/icon-logo.png",
-    shortcut: "/icon-logo.png",
+    icon: [
+      { url: "/logo-icon.png", type: "image/png", sizes: "any" },
+    ],
+    apple: "/logo-icon.png",
+    shortcut: "/logo-icon.png",
   },
-  themeColor: "#2952B3",
   manifest: "/manifest.webmanifest",
 };
 
