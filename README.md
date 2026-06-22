@@ -48,7 +48,7 @@ cp .env.example .env
 4. Edit `.env` dan sesuaikan dengan konfigurasi Anda:
 ```
 NEXT_PUBLIC_SITE_URL=https://techkuhouse.com
-NEXT_PUBLIC_WHATSAPP_NUMBER=6281234567890
+NEXT_PUBLIC_WHATSAPP_NUMBER=6285785741046
 ```
 
 5. Jalankan development server:
@@ -149,7 +149,7 @@ Website ini sudah dilengkapi dengan:
 
 ## WhatsApp Integration
 
-Form kontak akan mengirim pesan melalui WhatsApp. Pastikan `NEXT_PUBLIC_WHATSAPP_NUMBER` di `.env` sudah benar (format: 6281234567890).
+Form kontak akan mengirim pesan melalui WhatsApp. Pastikan `NEXT_PUBLIC_WHATSAPP_NUMBER` di `.env` sudah benar (format: 6285785741046).
 
 ## License
 
@@ -158,5 +158,5 @@ MIT License - bebas digunakan untuk project komersial maupun personal.
 ## Support
 
 Jika ada pertanyaan, silakan hubungi:
-- Email: info@techkuhouse.com
-- WhatsApp: +62 812 3456 7890
+- Email: admin@techkuhouse.id
+- WhatsApp: +62 857 8574 1046

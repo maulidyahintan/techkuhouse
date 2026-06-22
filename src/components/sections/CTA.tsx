@@ -1,7 +1,7 @@
 import Button from "@/components/ui/Button";
 
 export default function CTA() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Halo%20TechKuHouse%2C%20saya%20ingin%20berkonsultasi%20tentang%20project%20saya`;
 
   return (
@@ -14,11 +14,10 @@ export default function CTA() {
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Siap Mengembangkan Bisnis Anda?
+            Siap Memiliki Website Impian Anda?
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-            Konsultasikan kebutuhan digital Anda dengan tim expert kami.
-            Dapatkan solusi terbaik untuk mengakselerasi pertumbuhan bisnis Anda.
+            Konsultasikan kebutuhan website bisnis Anda bersama kami. DP untuk memulai, pelunasan setelah website selesai. Atau pesan lebih aman via Shopee dengan sistem PO — dana terlindungi!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -33,7 +32,18 @@ export default function CTA() {
                 </span>
               </Button>
             </a>
-            <a href="mailto:info@techkuhouse.com">
+            <a href="https://shopee.co.id/mauly_shop" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-orange-500 text-white hover:bg-orange-600 shadow-xl hover:shadow-2xl"
+              >
+                <span className="flex items-center">
+                  <span className="mr-2">🛒</span>
+                  Pesan via Shopee
+                </span>
+              </Button>
+            </a>
+            <a href="mailto:admin@techkuhouse.id">
               <Button
                 size="lg"
                 variant="outline"
@@ -45,30 +55,6 @@ export default function CTA() {
                 </span>
               </Button>
             </a>
-          </div>
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-white/20">
-            <div>
-              <div className="text-3xl mb-2">⚡</div>
-              <h3 className="font-semibold mb-1">Fast Response</h3>
-              <p className="text-sm text-gray-300">
-                Respon cepat maksimal 2 jam
-              </p>
-            </div>
-            <div>
-              <div className="text-3xl mb-2">💰</div>
-              <h3 className="font-semibold mb-1">Harga Kompetitif</h3>
-              <p className="text-sm text-gray-300">
-                Kualitas terbaik dengan harga terjangkau
-              </p>
-            </div>
-            <div>
-              <div className="text-3xl mb-2">🎯</div>
-              <h3 className="font-semibold mb-1">Garansi Kepuasan</h3>
-              <p className="text-sm text-gray-300">
-                Free revisi hingga Anda puas
-              </p>
-            </div>
           </div>
         </div>
       </div>

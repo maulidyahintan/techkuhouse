@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import PricingPackages from "@/components/sections/PricingPackages";
+import Features from "@/components/sections/Features";
 import OrderFlow from "@/components/sections/OrderFlow";
-import Services from "@/components/sections/Services";
-import Portfolio from "@/components/sections/Portfolio";
-import Testimonials from "@/components/sections/Testimonials";
+// import Services from "@/components/sections/Services";
+// import Portfolio from "@/components/sections/Portfolio";
+// import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
+import PromoFree from "@/components/sections/PromoFree";
 import CTA from "@/components/sections/CTA";
 import JsonLd from "@/components/JsonLd";
 
@@ -154,9 +156,11 @@ export default function HomePage() {
         <PricingPackages />
       </div>
       <OrderFlow />
-      <Services />
-      <Portfolio />
-      <Testimonials />
+      <Features />
+      {/* <Services /> */}
+      {/* <Portfolio /> */}
+      {/* <Testimonials /> */}
+      <PromoFree />
       <FAQ />
       <CTA />
     </>

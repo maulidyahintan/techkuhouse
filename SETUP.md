@@ -15,7 +15,7 @@ cp .env.example .env
 Edit `.env` file:
 ```
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_WHATSAPP_NUMBER=6281234567890
+NEXT_PUBLIC_WHATSAPP_NUMBER=6285785741046
 ```
 
 ### 3. Run Development Server
@@ -150,5 +150,5 @@ npm run type:check
 
 ## Support
 
-Email: info@techkuhouse.com
-WhatsApp: +62 812 3456 7890
+Email: admin@techkuhouse.id
+WhatsApp: +62 857 8574 1046
