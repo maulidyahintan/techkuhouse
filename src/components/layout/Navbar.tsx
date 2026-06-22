@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Home, Users, Briefcase, FolderOpen, Phone, LucideIcon } from "lucide-react";
-import { NavBar } from "@/components/ui/tubelight-navbar";
+import { NavBar } from "@/components/ui/Navbar";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -23,6 +24,7 @@ const navItems: NavItem[] = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState(navItems[0].name);
 
@@ -33,14 +35,13 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const path = window.location.pathname;
     const matched = navItems.find((item) =>
-      item.url === "/" ? path === "/" : path.startsWith(item.url)
+      item.url === "/" ? pathname === "/" : pathname.startsWith(item.url)
     );
     if (matched) setActiveTab(matched.name);
-  }, []);
+  }, [pathname]);
 
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Halo%20TechKuHouse%2C%20saya%20tertarik%20dengan%20layanan%20Anda`;
 
   return (
@@ -49,9 +50,6 @@ export default function Navbar() {
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-sm"
-            : "bg-transparent"
         )}
       >
         <div className="container-custom flex items-center justify-between h-16 sm:h-20 gap-4">
@@ -59,14 +57,14 @@ export default function Navbar() {
           {/* LOGO — selalu bg white, kiri */}
           <Link
             href="/"
-            className="flex items-center flex-shrink-0 bg-white rounded-xl px-3 py-1.5 shadow-sm"
+            className="flex items-center flex-shrink-0 bg-white rounded-xl px-3 py-1.5 shadow-md backdrop-blur-md"
           >
             <Image
               src="/logo.png"
               alt="TechKuHouse Logo"
-              width={160}
-              height={54}
-              className="h-9 sm:h-11 w-auto object-contain"
+              width={200}
+              height={80}
+              className="h-9 sm:h-14 w-auto object-contain"
               priority
             />
           </Link>

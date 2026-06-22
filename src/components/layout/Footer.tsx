@@ -6,57 +6,36 @@ const footerLinks = {
     { href: "/tentang", label: "Tentang Kami" },
     { href: "/layanan", label: "Layanan" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "/kontak", label: "Kontak" },
+    // { href: "/kontak", label: "Kontak" },
   ],
   layanan: [
-    { href: "/layanan#web-development", label: "Web Development" },
-    { href: "/layanan#mobile-app", label: "Mobile App" },
-    { href: "/layanan#uiux", label: "UI/UX Design" },
-    { href: "/layanan#seo", label: "SEO Optimization" },
+    { href: "/layanan#web-development", label: "Jasa Pembuatan Web" },
+    { href: "/layanan#mobile-app", label: "Jasa Pembuatan Aplikasi" },
+    { href: "/layanan#seo", label: "Jasa SEO Bergaransi" },
+    { href: "/layanan#online-shop", label: "Jasa Admin Online Shop" },
+    { href: "/layanan#promo", label: "Website Lembaga Gratis" },
   ],
 };
 
-const socialLinks = [
-  { href: "https://facebook.com/techkuhouse", label: "Facebook", icon: "F" },
-  { href: "https://instagram.com/techkuhouse", label: "Instagram", icon: "I" },
-  { href: "https://linkedin.com/company/techkuhouse", label: "LinkedIn", icon: "L" },
-  { href: "https://twitter.com/techkuhouse", label: "Twitter", icon: "T" },
-];
-
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046";
 
   return (
     <footer className="bg-dark text-white">
       <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+          <div className="col-span-2">
             <Image
               src="/logo.png"
               alt="TechKuHouse"
-              width={200}
-              height={67}
-              className="h-14 w-auto object-contain brightness-0 invert mb-4"
+              width={250}
+              height={80}
+              className="h-[40%] w-auto object-contain brightness-0 invert mb-4"
             />
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Solusi digital terbaik untuk mengembangkan bisnis Anda. Kami
+              Solusi digital terbaik untuk mengembangkan bisnis Anda. <br />Kami
               menciptakan website dan aplikasi yang modern, cepat, dan efektif.
             </p>
-            <div className="flex space-x-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 bg-dark-light hover:bg-primary rounded-full flex items-center justify-center transition-colors duration-200"
-                  aria-label={social.label}
-                >
-                  <span className="text-sm font-semibold">{social.icon}</span>
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
@@ -96,15 +75,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start">
                 <span className="mr-2">📍</span>
-                <span>Jakarta Selatan, DKI Jakarta, Indonesia</span>
+                <span>Jakarta Timur, DKI Jakarta, Indonesia</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">📧</span>
                 <a
-                  href="mailto:info@techkuhouse.com"
+                  href="mailto:admin@techkuhouse.id"
                   className="hover:text-primary transition-colors duration-200"
                 >
-                  info@techkuhouse.com
+                  admin@techkuhouse.id
                 </a>
               </li>
               <li className="flex items-start">
@@ -124,8 +103,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm text-gray-400">
           <p>
-            &copy; {currentYear} TechKuHouse. All rights reserved. Made with ❤️
-            in Jakarta.
+            &copy; TechKuHouse. All rights reserved. Made with Bissmillah.
           </p>
         </div>
       </div>
