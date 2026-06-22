@@ -4,16 +4,14 @@ const pricingPackages = [
   {
     name: "Silver",
     price: "Rp 700.000",
-    renewal: "Rp 500.000/tahun",
+    renewal: "Rp 400.000/tahun",
     description: "Untuk bisnis baru dengan kebutuhan website sederhana",
     features: [
       "4 Menu Halaman",
       "Domain .web.id Gratis",
       "Hosting 500 MB",
-      "SSL Gratis (HTTPS)",
-      "Template WordPress Premium",
       "Integrasi Media Sosial",
-      "Video Panduan Edit",
+      "Gratis Revisi Text Content setahun",
       "Bandwidth Unlimited",
       "Contact Form",
       "Support Gratis",
@@ -26,18 +24,19 @@ const pricingPackages = [
   {
     name: "Gold",
     price: "Rp 1.600.000",
-    renewal: "Rp 600.000/tahun",
+    renewal: "Rp 500.000/tahun",
     description: "Ideal untuk website lengkap dengan fitur e-commerce dan blog",
     features: [
       "8 Menu Halaman",
       "Domain .com Gratis",
       "Hosting 3 GB",
-      "SSL Gratis (HTTPS)",
-      "Template WordPress Premium",
-      "Logo & Banner Gratis",
+      "Desain Web Premium",
+      "Web Responsif All Platform",
+      "SEO Setup",
+      "Gratis Revisi Text dan Gambar Content setahun",
+      "Banner Gratis",
       "Google Map Integration",
       "WhatsApp/Telepon Button",
-      "Statistik Kunjungan",
       "Support Gratis",
       "Garansi Selamanya",
     ],
@@ -48,16 +47,19 @@ const pricingPackages = [
   {
     name: "Diamond",
     price: "Rp 2.000.000",
-    renewal: "Rp 1.000.000/tahun",
+    renewal: "Rp 800.000/tahun",
     description: "Profil bisnis profesional untuk meningkatkan kehadiran online",
     features: [
       "10 Menu Halaman",
       "Domain .com & .co.id Gratis",
       "Hosting 3 GB",
-      "SSL Gratis (HTTPS)",
       "Plugin Premium",
+      "Web Responsif All Platform",
+      "SEO Setup",
+      "Gratis Revisi Text, Gambar, Tema setahun",
       "Logo & Banner Gratis",
       "Google Map Integration",
+      "1 Email Routing Gratis",
       "WhatsApp/Telepon Button",
       "Statistik Kunjungan",
       "Support Gratis",
@@ -70,18 +72,21 @@ const pricingPackages = [
   {
     name: "Platinum",
     price: "Rp 3.000.000",
-    renewal: "50% dari harga/tahun",
+    renewal: "40% dari harga/tahun",
     description: "Website kompleks dengan desain unik dan fitur lengkap",
     features: [
       "15-20 Menu Halaman",
       "Domain .com, .id & .co.id Gratis",
       "Hosting 5 GB",
-      "SSL Gratis (HTTPS)",
       "Plugin Premium",
-      "1 Email Bisnis Gratis",
+      "Web Responsif All Platform",
+      "SEO Setup",
+      "Gratis Revisi Semua Content setahun",
       "Logo & Banner Gratis",
       "Google Map Integration",
-      "Integrasi Lapak Media",
+      "1 Email Bisnis Gratis",
+      "WhatsApp/Telepon Button",
+      "Statistik Kunjungan",
       "Support Gratis",
       "Garansi Selamanya",
     ],
@@ -143,7 +148,7 @@ export default function PricingPackages() {
                   Pesan Sekarang
                 </a>
                 <a
-                  href="https://shopee.co.id/techkuhouse"
+                  href="https://shopee.co.id/mauly_shop"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200 text-center"

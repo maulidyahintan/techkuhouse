@@ -4,34 +4,34 @@ const services = [
   {
     id: "web-development",
     icon: "💻",
-    title: "Web Development",
+    title: "Pembuatan Website",
     description:
-      "Pembuatan website profesional dengan teknologi terkini. Responsive, cepat, dan SEO-friendly.",
-    features: ["Company Profile", "E-commerce", "Landing Page", "Web App"],
+      "Website profesional responsif dengan domain & hosting gratis, SSL, dan garansi selamanya. Mulai dari Rp 700.000.",
+    features: ["Company Profile", "Toko Online", "Landing Page", "Domain + Hosting Gratis"],
+  },
+  {
+    id: "seo-bergaransi",
+    icon: "🚀",
+    title: "SEO Bergaransi",
+    description:
+      "Tingkatkan peringkat di Google dengan strategi SEO terbukti. Kami bergaransi peningkatan traffic organik bisnis Anda.",
+    features: ["On-Page SEO", "Technical SEO", "Riset Kata Kunci", "Laporan Bulanan"],
+  },
+  {
+    id: "google-social-ads",
+    icon: "📢",
+    title: "Google & Social Ads",
+    description:
+      "Iklan berbayar efektif di Google, Instagram, Facebook, dan TikTok untuk menjangkau lebih banyak calon pelanggan.",
+    features: ["Google Ads", "Instagram Ads", "Facebook Ads", "TikTok Ads"],
   },
   {
     id: "mobile-app",
     icon: "📱",
-    title: "Mobile App Development",
+    title: "Pembuatan Aplikasi",
     description:
-      "Aplikasi mobile native dan cross-platform untuk iOS dan Android dengan performa optimal.",
-    features: ["iOS App", "Android App", "Flutter", "React Native"],
-  },
-  {
-    id: "uiux-design",
-    icon: "🎨",
-    title: "UI/UX Design",
-    description:
-      "Desain antarmuka yang menarik dan user experience yang intuitif untuk produk digital Anda.",
-    features: ["User Research", "Wireframing", "Prototyping", "Visual Design"],
-  },
-  {
-    id: "seo-optimization",
-    icon: "🚀",
-    title: "SEO Optimization",
-    description:
-      "Optimasi website agar mudah ditemukan di mesin pencari dan meningkatkan traffic organik.",
-    features: ["On-Page SEO", "Technical SEO", "Content Strategy", "Analytics"],
+      "Aplikasi mobile Android & iOS serta web application custom sesuai kebutuhan spesifik bisnis Anda.",
+    features: ["Android & iOS App", "Web Application", "E-Commerce App", "API Integration"],
   },
 ];
 

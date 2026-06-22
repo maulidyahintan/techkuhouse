@@ -71,14 +71,14 @@ const products = [
   {
     icon: TrendingUp,
     label: "SEO Bergaransi",
-    desc: "Ranking #1 Google terjamin",
+    desc: "Terbaca pencarian Google",
     href: "/layanan#seo-bergaransi",
     color: "from-cyan-500/30 to-cyan-600/20",
   },
   {
     icon: ShoppingCart,
     label: "Admin Online Shop",
-    desc: "Kelola toko online Anda",
+    desc: "Jasa kelola toko online Anda",
     href: "/layanan#social-media-ads",
     color: "from-violet-500/30 to-violet-600/20",
   },

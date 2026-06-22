@@ -6,30 +6,39 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     id: 1,
-    name: "Budi Santoso",
-    position: "CEO PT. Maju Jaya",
+    name: "Hendra Kusuma",
+    position: "Owner Toko Bangunan Online, Surabaya",
     content:
-      "TechKuHouse sangat profesional dalam mengerjakan website perusahaan kami. Hasilnya melebihi ekspektasi dan proses pengerjaannya sangat cepat!",
+      "TechKuHouse sangat profesional! Website toko online saya selesai dalam 5 hari kerja. Sekarang pelanggan bisa order 24 jam lewat website. Omzet naik signifikan sejak punya website yang proper!",
     rating: 5,
-    avatar: "BS",
+    avatar: "HK",
   },
   {
     id: 2,
-    name: "Siti Nurhaliza",
-    position: "Owner Toko Fashion Online",
+    name: "Ustaz Faisal Rahman",
+    position: "Ketua DKM Masjid Al-Ikhlas, Jakarta",
     content:
-      "Setelah menggunakan jasa TechKuHouse untuk membuat toko online, penjualan kami meningkat 300%. Tim yang sangat responsif dan supportnya luar biasa!",
+      "Alhamdulillah, TechKuHouse memberikan website gratis untuk masjid kami. Sekarang jadwal kajian, pengumuman, dan donasi online bisa diakses jamaah dengan mudah. Sangat berterima kasih!",
     rating: 5,
-    avatar: "SN",
+    avatar: "FR",
   },
   {
     id: 3,
-    name: "Ahmad Rizki",
-    position: "Marketing Manager",
+    name: "Dewi Rahmawati",
+    position: "Pemilik Klinik Kecantikan, Bandung",
     content:
-      "Aplikasi mobile yang dibuat oleh TechKuHouse sangat user-friendly. Customer kami sangat puas dengan experience yang diberikan. Highly recommended!",
+      "Pesan website via Shopee ternyata aman banget! Dana baru cair setelah website jadi dan saya approve. Hasilnya pun memuaskan, desainnya modern dan pelanggan makin banyak yang datang dari online.",
     rating: 5,
-    avatar: "AR",
+    avatar: "DR",
+  },
+  {
+    id: 4,
+    name: "PT. Sinar Maju Teknologi",
+    position: "Perusahaan IT, Jakarta Timur",
+    content:
+      "Sudah 3x pakai jasa TechKuHouse untuk project berbeda. Selalu on-time, hasilnya bagus, dan after-sales support responsif. Recommended banget untuk bisnis yang butuh solusi digital cepat!",
+    rating: 5,
+    avatar: "SM",
   },
 ];
 
