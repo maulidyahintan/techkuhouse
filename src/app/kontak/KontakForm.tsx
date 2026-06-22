@@ -7,19 +7,25 @@ const contactInfo = [
   {
     icon: "📍",
     title: "Alamat",
-    content: "Jakarta Selatan, DKI Jakarta, Indonesia",
+    content: "Jakarta Timur, DKI Jakarta, Indonesia",
   },
   {
     icon: "📧",
     title: "Email",
-    content: "info@techkuhouse.com",
-    link: "mailto:info@techkuhouse.com",
+    content: "admin@techkuhouse.id",
+    link: "mailto:admin@techkuhouse.id",
   },
   {
     icon: "📱",
     title: "WhatsApp",
-    content: "+62 812 3456 7890",
-    link: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890"}`,
+    content: "+62 857 8574 1046",
+    link: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046"}`,
+  },
+  {
+    icon: "🛒",
+    title: "Toko Shopee",
+    content: "shopee.co.id/mauly_shop",
+    link: "https://shopee.co.id/mauly_shop",
   },
   {
     icon: "🕐",
@@ -47,7 +53,7 @@ export default function KontakForm() {
     setIsSubmitting(true);
 
     const whatsappNumber =
-      process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890";
+      process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285785741046";
     const message = `Halo TechKuHouse,%0A%0ANama: ${formData.name}%0AEmail: ${formData.email}%0ANo. HP: ${formData.phone}%0ASubjek: ${formData.subject}%0A%0APesan:%0A${formData.message}`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -124,7 +130,7 @@ export default function KontakForm() {
               ))}
             </div>
 
-            <div>
+            {/* <div>
               <h3 className="font-semibold text-dark mb-4">
                 Follow Kami di Social Media
               </h3>
@@ -163,7 +169,7 @@ export default function KontakForm() {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-8">
