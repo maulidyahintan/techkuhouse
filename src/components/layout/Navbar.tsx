@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Home, Users, Briefcase, FolderOpen, Phone, LucideIcon } from "lucide-react";
+import { Home, Users, Briefcase, Phone, LucideIcon } from "lucide-react";
 import { NavBar } from "@/components/ui/Navbar";
 import { cn } from "@/lib/utils";
 
